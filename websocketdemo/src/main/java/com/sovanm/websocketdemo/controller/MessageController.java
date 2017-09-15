@@ -9,6 +9,11 @@ import com.sovanm.websocketdemo.dto.MessageDTO;
 import com.sovanm.websocketdemo.entity.Message;
 import com.sovanm.websocketdemo.service.MessageService;
 
+/**
+ * This is for demonstration purpose for the Javascript version of the application
+ * @author sovanm
+ *
+ */
 @RestController
 public class MessageController {
 

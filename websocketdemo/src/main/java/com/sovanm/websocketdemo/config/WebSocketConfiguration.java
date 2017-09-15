@@ -20,5 +20,8 @@ public class WebSocketConfiguration extends AbstractWebSocketMessageBrokerConfig
 	public void registerStompEndpoints(StompEndpointRegistry registry) {
 		registry.addEndpoint("/chat");											// End point through which a connect via web socket with this application.
 		registry.addEndpoint("/chat").withSockJS();								// Same as above but with SockJS
+		
+		registry.addEndpoint("/product");											// End point through which a connect via web socket with this application.
+		registry.addEndpoint("/product").withSockJS();								// Same as above but with SockJS
 	}
 }
