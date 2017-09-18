@@ -21,7 +21,7 @@ public class WebSocketConfiguration extends AbstractWebSocketMessageBrokerConfig
 		registry.addEndpoint("/chat");											// End point through which a connect via web socket with this application.
 		registry.addEndpoint("/chat").withSockJS();								// Same as above but with SockJS
 		
-		registry.addEndpoint("/product");											// End point through which a connect via web socket with this application.
-		registry.addEndpoint("/product").withSockJS();								// Same as above but with SockJS
+		registry.addEndpoint("/ws");											// End point through which a connect via web socket with this application.
+		registry.addEndpoint("/ws").setAllowedOrigins("*").withSockJS();		// Same as above but with SockJS
 	}
 }

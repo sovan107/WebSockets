@@ -46,13 +46,18 @@ public class ProductServiceImpl implements ProductService {
 		
 		
 		domainProduct = productRepository.save(domainProduct);
-		
 		return domainProduct;
 	}
 
 	@Override
 	public List<Product> listProducts() {
 		return productRepository.findAll();
+	}
+
+	@Override
+	public boolean deleteProduct(int id) {
+		productRepository.delete(id);
+		return productRepository.findOne(id) == null;
 	}
 
 }

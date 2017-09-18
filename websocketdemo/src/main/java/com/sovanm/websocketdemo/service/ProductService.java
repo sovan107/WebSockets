@@ -10,4 +10,5 @@ public interface ProductService {
 	Product saveProduct(ProductDTO product);
 	Product saveProductByWS(ProductDTO product);
 	List<Product> listProducts();
+	boolean deleteProduct(int id);
 }
